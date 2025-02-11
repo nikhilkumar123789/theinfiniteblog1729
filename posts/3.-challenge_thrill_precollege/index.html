@@ -1,0 +1,84 @@
+<!doctype html><html lang=en-us class=scroll-smooth><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Selected problems from the book Challenge and thrill of pre-college mathematics | The Infinite Line</title>
+<script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]],tags:"ams",packages:{"[+]":["physics","color"]}},loader:{load:["[tex]/physics","[tex]/color"]},chtml:{displayAlign:"left",displayIndent:"2em"}}</script><script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js async></script><link rel=stylesheet href=/theinfiniteblog1729/css/main.min.3e3be886d19886587f803d75ce1452d58b9ac1e7db1cfbf60e0ef85162a8a5a7.css><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel=stylesheet></head><body class="bg-surface text-on-surface font-sans antialiased"><header class="bg-primary text-on-primary shadow-md fixed w-full top-0 z-50"><nav class="container mx-auto px-4 py-4 flex items-center justify-between"><a href=https://nikhilkumar123789.github.io/theinfiniteblog1729/ class="flex items-center gap-2" id=site-title-class><img src=https://nikhilkumar123789.github.io/theinfiniteblog1729//images/logo.svg alt=Logo class="h-8 w-8">
+<span class="text-xl font-bold" id=site-title>The Infinite Line</span></a><div class="flex gap-6"><a href=https://nikhilkumar123789.github.io/theinfiniteblog1729//posts class="hover:text-accent transition-colors">Posts</a>
+<a href=https://nikhilkumar123789.github.io/theinfiniteblog1729//about class="hover:text-accent transition-colors">About</a></div></nav></header><main class="container mx-auto px-4 py-8"><article class=post><h1>Selected problems from the book Challenge and thrill of pre-college mathematics</h1><time>October 1, 2023</time><div class=post-content><h1 id=chapter-2>Chapter 2</h1><h2 id=arithmetic-of-integers>Arithmetic of integers</h2><hr><h3 id=233>2.3.3</h3><h4 id=problem>Problem</h4><p>Find all positive integers n such that $2^8+2^{11}+2^n$ is a perfect square.</p><h4 id=solution>Solution</h4><p>We have $N=2^8+2^{11}+2^n$.</p><p>Let $N=k^2$ for some $k\in\mathbb{N}$. Then, we have three cases:</p><p><ins><b>Case 1:</b></ins> $\mathbf{n=8}$</p><p>We have $N=2^9\times5$ and hence not a perfect square.</p><p><ins><b>Case 2:</b></ins> $\mathbf{n&lt;8}$</p><p>We have $N=9\cdot2^8+2^n=2^n\times(1+9\cdot2^{8-n})=2^n\times k$. Since $k$ is odd, we have $2\mid n$ for $N$ to be a perfect square. Now, letting $n=2m$ for $m\in\mathbb{N}$, we have $l^2=1+9\cdot2^{2(4-m)}$. Then
+$$
+\begin{array}{rrl}
+&amp;l^2&=1+9\cdot2^{2(4-m)}\newline
+\implies&amp;l^2&=1+(3\cdot2^{(4-m)})^2\newline
+\implies&(l-3\cdot2^{4-m})(l+3\cdot2^{4-m})&=1\newline
+\implies&(l-3\cdot2^{4-m})&=(l+3\cdot2^{4-m})\newline
+\implies&amp;3\cdot2^{4-m}&=0
+\end{array}
+$$
+which contradicts the fact that $3\cdot2^{4-m}>0$ since $n&lt;8$ or $m&lt;4$ or $(4-m)>0$.</p><p>Thus there is no $l$ for which $l^2=1+(3\cdot2^{4-m})^2$ and hence $N$ cannot be a perfect square.</p><p><ins><b>Case 3:</b></ins> $\mathbf{n>8}$</p><p>We have $N=2^8\times(9+2^{n-8})$. Hence, we have $l^2=9+2^{n-8}$ since $(9+2^{n-8})$ is odd. This, $(l-3)(l+3)=2^{n-8}$. Now, letting $l-3=2^p$ and $l+3=2^q$, we have</p><p>$$2^q-2^p=2^p(2^{q-p}-1)=6$$</p><p>Suppose, $p=0$. Then, $2^q=7$ giving no solution for $q\in\mathbb{Z}\geq0$. Now, for $p=1$, we have $2^{q-1}=4\implies q=3$. Hence, $n-8=p+q$ or $n=p+q+8=1+3+8=12$. Hence, the only $n$ for which $N$ is a perfect square is $n=12$.</p><hr><h3 id=234>2.3.4</h3><h4 id=problem-1>Problem</h4><p>How many solutions are there in $\mathbb{N}\times\mathbb{N}$ to the equation $1/x+1/y = 1/1995$.</p><h4 id=solution-1>Solution</h4><p>We have
+$$1995x+1995y=xy$$
+or $1995^2-1995x-1995y+xy=0$ or
+$$(x-1995)(y-1995)=1995^2$$
+Also, since $1/x&lt;1/1995$ and $1/y&lt;1/1995$, we have $x>1995$ and $y>1995$. Hence, the number of solutions of $(x-1995)(y-1995)=1995^2$ is the number of divisors of $1995^2$.\par
+Since $1995=3\times5\times7\times19$, we have $1995^2=3^2\times5^2\times7^2\times19^2$ and hence number of solutions in $\mathbb{N}\times\mathbb{N}$ of the equation is $(2+1)^4=3^4=81$ or <strong>81</strong>.</p><hr><h3 id=235>2.3.5</h3><h4 id=problem-2>Problem</h4><p>If $m, n, k$ are any three positive integers prove that
+$$(m, n)(m, k)(n, k) [m, n, k] ^ 2 = [m, n][m, k][n, k] (m, n, k) ^ 2$$</p><h4 id=solution-2>Solution</h4><p><b><ins>Prime factorization method</ins></b></p><p>Suppose $p$ is a prime and the power of $p$ in the prime factorization of $m,n,k\in\mathbb{N}$ are $a,b,c\geq0\in\mathbb{Z}$ respectively.</p><p>Then, the power of $p$ in prime factorization of $LHS=(m, n)(m, k)(n, k) [m, n, k] ^ 2$ is
+$$x=\min(a,b)+\min(a,c)+\min(b,c)+2\max(a,b,c)$$</p><p>The power of $p$ in prime factorization of $RHS=[m, n][m, k][n, k] (m, n, k) ^ 2$ is
+$$x=\max(a,b)+\max(a,c)+\max(b,c)+2\min(a,b,c)$$</p><p>Without any loss of generality, assuming that $a\leq b\leq c$, we have
+$$x=a+a+b+2c=2a+b+2c$$
+and
+$$y=b+c+c+2a=2a+b+2c$$</p><p>Hence, $x=y$ or the power of $p$ in prime factorization of both $LHS$ and $RHS$ is the same. Thus, by the Fundamental theorem of arithmetic,
+$$LHS=RHS$$
+or
+$$(m, n)(m, k)(n, k) [m, n, k] ^ 2 = [m, n][m, k][n, k] (m, n, k) ^ 2$$</p><p><b><ins>Alternate method</ins></b></p><p>We know that $(rx,ry)=r(x,y)$. Suppose $(m,n,k)=d$. Then, $m=dm&rsquo;$, $n=dn&rsquo;$, $k=dk&rsquo;$ for some $m&rsquo;,n&rsquo;,k&rsquo;\in\mathbb{N}$. Then, $(m&rsquo;,n&rsquo;,k&rsquo;)=1$.</p><p>Suppose $\displaystyle{\left(\frac{n&rsquo;}{(n&rsquo;,m&rsquo;)},\frac{k&rsquo;}{(m&rsquo;,k&rsquo;)}\right)}=d_1$ and $(n&rsquo;,k&rsquo;)=d_2$.</p><p>Since $d_1\mid\displaystyle\frac{n&rsquo;}{(n&rsquo;,m&rsquo;)}$ and $d_1\mid\displaystyle\frac{k&rsquo;}{(m&rsquo;,k&rsquo;)}$, we have $d_1\mid n&rsquo;$ and $d_1\mid k&rsquo;$ or $d_1\mid (n&rsquo;,k&rsquo;)$ or $d_1\mid d_2$.</p><p>Now, letting $d_2=a$, $(n&rsquo;,m&rsquo;)=b$, we have $(a,b)=((n&rsquo;,k&rsquo;),(n&rsquo;,m&rsquo;))=(m&rsquo;,n&rsquo;,k&rsquo;)=1$, we have if $a\mid n&rsquo;$ and $b\mid n&rsquo;$ then $ab\mid n&rsquo;$ or $a\mid (n&rsquo;/b)$. Thus, we have
+$$d_2\mid\displaystyle\frac{n&rsquo;}{(n&rsquo;,m&rsquo;)}$$
+and likewise
+$$d_2\mid\displaystyle\frac{k&rsquo;}{(k&rsquo;,m&rsquo;)}$$
+Hence, $d_2\mid d_1$. thus, since $d_1,d_2>0$, we have
+$$d_1=d_2$$
+or
+$$\displaystyle{\left(\frac{n&rsquo;}{(n&rsquo;,m&rsquo;)},\frac{k&rsquo;}{(m&rsquo;,k&rsquo;)}\right)=(n&rsquo;,k&rsquo;)}$$
+Since, $n&rsquo;=n/d$, $m&rsquo;=m/d$, $k&rsquo;=k/d$ and $(m,n,k)=d$, we have
+$$\left(\frac{n}{(n,m)},\frac{k}{(m,k)}\right)=\frac{(n,k)}{(m,n,k)}$$
+Now, we have to also prove that if $(a,b)=1$, then $(a,bc)=(a,c)$. Suppose $g_1=(a,bc)$ and $g_2=(a,c)$. Then, since $g_2\mid a$ and $g_2\mid c$, we have $g_2\mid bc$ or $g_2\mid(a,bc)$ or $g_2\mid g_1$.</p><p>Also, we have $\exists x,y,u,v$ such that $ax+cy=g_2$ and $au+bv=1$. Multiplying, we have $a(axu+bxv+cyu)+(bc)(yv)=g_2$. Since $g_1\mid a$ and $g_1\mid bc$, we have $g_1\mid g_2$.</p><p>Hence, $g_1=g_2$ or $(a,bc)=(a,c)$ if $(a,b)=1$.</p><p>Now, we have
+$$([m,n],k)=\left(\displaystyle\frac{mn}{(m,n)},k\right)$$
+since $mn=(m,n)[m,n]$. Now,
+$$
+\begin{array}{rrl}
+&([m,n],k)&=\left(\displaystyle\frac{mn}{(m,n)},k\right)\newline
+\implies&([m,n],k)&=(m,k)\left(\displaystyle\frac{mn}{(m,n)(m,k)},\frac{k}{(m,k)}\right)\newline
+\implies&([m,n],k)&=(m,k)\left(\left(\displaystyle\frac{n}{(n,m)}\right)\cdot\left(\displaystyle\frac{m}{(m,k)}\right),\displaystyle\frac{k}{(m,k)}\right)\newline
+\end{array}
+$$
+Now, since $\left(\displaystyle\frac{m}{(m,k)},\displaystyle\frac{k}{(m,k)}\right)=1$, we have
+$$([m,n],k)=(m,k)\left(\displaystyle\frac{n}{(m,n)},\displaystyle\frac{k}{(m,k)}\right)$$
+Now, since
+$$\left(\frac{n}{(m,n)},\frac{k}{(m,k)}\right)=\frac{(n,k)}{(m,n,k)}$$
+we have
+$$([m,n],k)=\frac{(m,k)(n,k)}{(m,n,k)}$$
+Also, we have
+$$[m,n,k]=[[m,n],k]=\displaystyle{[m,n]k}{([m,n],k)}$$
+and using earlier expression for $([m,n],k)$ and $[m,n]=mn/(m,n)$, we have
+$$\boxed{[m,n,k]=\displaystyle\frac{mnk(m,n,k)}{(m,n)(m,k)(n,k)}}$$
+Now for our result, squaring both sides, we have
+$$[m,n,k]^2=\left(\displaystyle\frac{mn}{(m,n)}\right)\times\left(\displaystyle\frac{mk}{(m,k)}\right)\times\left(\displaystyle\frac{nk}{(n,k)}\right)\times\left(\displaystyle\frac{(m,n,k)^2}{(m,n)(m,k)(n,k)}\right)$$
+or
+$$(m,n)(m,k)(n,k)[m,n,k]^2=[m,n][m,k][n,k](m,n,k)^2$$</p><hr><h3 id=237>2.3.7</h3><h4 id=problem-3>Problem</h4><p>Let $X={x|x= 1 + 1/2 + 1/3 +\dots+1/n,n\in\mathbb{N}}$ . Find $X\cap\mathbb{N}$.</p><h4 id=solution-3>Solution</h4><p>We have $x=1\in\mathbb{N}$ for $n=1$.</p><p>Now, for $n>1$, we can always find $k\in\mathbb{N}$ such that $2^k\leq n&lt;2^{k+1}$. Now, this is true for $n=2$ since $n=2=2^1$ or $k=1$. Assuming this is true for $n=m$. Then, we have $2^k\leq m&lt;2^{k+1}$. If $m&lt;2^{k+1}-1$, then, we have $2^k&lt;(m+1)&lt;2^{k+1}$ and we have the required $k$. Now, suppose $m=2^{k+1}-1$. Then, we have our new $k$ as $k+1$ since $2^{k+1}\leq(m+1)&lt;2^{(k+1)+1}$ as $(m+1)=2^{k+1}$. Hence, we can find a $k\in\mathbb{N}$ $\forall n>1\in\mathbb{N}$ such that $2^k\leq n&lt;2^{k+1}$.</p><p>Now, suppose $L=[1,2,3,\dots n]$.</p><p>Then, we have power of $2$ in $L$ as $k$ since for any $1\leq j\leq n$ and $j\neq2^k$, we have if $j=2^a b$ ($a\geq0$, $b$ an odd number), then $a&lt;k$. We prove this by contradiction. Letting $a>k$, we have $j\geq 2^{k+1}>n$ contradicting $j\leq n$. If $a=k$, then, we have $j=2^k b$. Now, since $j \neq 2^k$, $b\neq 1$ and hence $b\geq 2$ or $j\geq 2^{k+1}>n$ contradicting the fact that $j\leq n$. Hence, we should have $a&lt;k$ for $j=2^a b$ and $1\leq j \leq n$, $j\neq 2^k$. Hence, power of $2$ in $L$ is $k$ or $L=2^k l$ for some odd $l\in\mathbb{N}$. Since, $j\mid L$ ($j=2^{a_j}b_j$) for any $1\leq j\leq n$, we have $b_j\mid 2^{k-a_j}l$. Since $b$ is odd, $(b,2^{k-a})=1$ and hence $b\mid l$ or let $l=b_jd_j$ for some $d_j\in\mathbb{N}$. Hence, for $1\leq j\leq n$ and $j\neq 2^k$, we have
+$$\frac{L}{j}=\frac{2^kl}{2^{a_j}b_j}=2^{k-a_j}d_j$$</p><p>Now, since $a_j&lt;k$ for $1\leq j\leq n$ and $j\neq 2^k$, we have $2\mid(L/j)$.</p><p>Suppose $\displaystyle{1+\frac{1}{2}+\frac{1}{3}+\dots+\frac{1}{n}}=m\in\mathbb{N}$ for a $n\in\mathbb{N}$. Then, we have
+$$mL=\sum_{j=1; j\neq 2^k}^{n}\displaystyle\frac{L}{j}+\displaystyle\frac{L}{2^k}=\sum_{j=1; j\neq 2^k}^{n}(2^{k-a_j}d_j)+l$$</p><p>Since $k>a_j$ for $1\leq j\leq n$, $j\neq 2^k$, we have $2\mid \sum_{j=1; j\neq 2^k}^{n}(2^{k-a_j}d_j)$ but $2\nmid l$ since $l$ is odd. Hence, RHS is odd. But since $2\mid L$, we have LHS as even. Hence
+$$LHS\neq RHS$$
+a contradiction. Hence, $m\notin\mathbb{N}$. Thus, we have
+$$X\cap\mathbb{N}={1}$$</p><hr><h3 id=238>2.3.8</h3><h4 id=problem-4>Problem</h4><p>Find the smallest number with 28 divisors?</p><h4 id=solution-4>Solution</h4><p>Suppose we have two primes $p_1$, $p_2$ ($p_1&lt;p_2$) and numbers $x=p_1^{a_1}p_2^{a_2}$ and $y=p_1^{b_1}$. Then, if these numbers have same number of factors, we have $(1+a_1)(1+a_2)=1+b_1$ or $b_1=a_1+a_2+a_1a_2$. Then, we have
+$$\ln(y)=b_1\ln(p_1)$$
+and
+$$\ln(x)=a_1\ln(p_1)+a_2\ln(p_2)$$
+Now,
+$$\ln(y/x)=(a_2+a_1a_2)\ln(p_1)-a_2\ln(p_2)$$
+Thus, if $y>x$, then, $p_1^{1+a_1}>p_2$.
+Hence, for same number of factors, if we have $p_1^{1+a_1}>p_2$, then, it will be better to have $p_1^{a_1}p_2^{a_2}$ rather than $p_1^{a_1+a_2+a_1a_2}$ if we want a smaller number.
+Also, let $u=p_1^{a_1-1}p_2^{a_2-1}$ and $v=p_1^{b_1-1}p_2^{b_2-1}$. Then, suppose $\tau(u)=\tau(v)$. Then, $a_1a_2=b_1b_2$. Also,
+$$\frac{v}{u}=p_1^{(b_1-a_1)}p_2^{(b_2-a_2)}>p_1^{(b_1+b_2)-(a_1+a_2)}$$
+Hence, if $(b_1+b_2)>(a_1+a_2)$, then we will have $v>u$. Thus, we should select lowest value of $a_1+a_2$ for lower value.</p><p>Suppose
+$$n=\prod_{i=1}^k p_k^{a_k}$$
+then
+$$\tau(n)=\prod_{i=1}^{k}(1+a_k)$$
+Since $28=2^2\cdot7$, we have possible powers of $28$ as $(6,1,1)$, $(6,3)$, $(13,1)$, $(27)$. Now, for smallest $n$, $p_1=2$, $p_2=3$, $p_3=5$. Now, for lower value, we select $(6,3)$. Also, $2^{27}>2^{6}3^{3}$ since $2^7>3$. Now, we have $3^3>3^1 5^1$ since $3^2>5$. Hence, we have the lowest $n$ as
+$$n=2^63^15^1=960$$
+or <strong>960</strong>.</p></div><div class=post-navigation><a class=next href=/theinfiniteblog1729/posts/2.-gcd_proof_powers/>A GCD Proof →</a></div></article></main><footer class="bg-surface-container mt-16 py-8 border-t border-outline-variant"><div class="container mx-auto px-4 text-center"><div class="grid grid-cols-1 md:grid-cols-3 gap-8"><div class=footer-section><h4 class="text-lg font-semibold mb-4" style=margin-bottom:0>About</h4><p class="text-sm text-muted">The Infinite Line is dedicated to exploring the beauty and intricacies of mathematics, offering articles, tutorials, and problem-solving
+strategies for enthusiasts and students alike.</p></div><div class=footer-section><h4 class="text-lg font-semibold mb-4" style=margin-bottom:0>Categories</h4><ul class="text-sm space-y-2"><li><a href=/theinfiniteblog1729/categories/number-theory/ class="text-muted hover:text-accent transition-colors">Number Theory</a></li></ul></div><div class=footer-section><h4 class="text-lg font-semibold mb-4" style=margin-bottom:0>Connect</h4><div class="flex justify-center space-x-4"><a href=https://www.linkedin.com/in/nikhilkumar-iitkgp/ class="text-muted hover:text-accent transition-colors">LinkedIn</a>
+<a href=https://github.com/nikhilkumar123789 class="text-muted hover:text-accent transition-colors">GitHub</a></div></div></div><div class="mt-8 pt-8 border-t border-outline-variant"><p class="text-sm text-muted">&copy; 2025 The Infinite Line. All rights reserved.</p></div></div></footer></body></html>
