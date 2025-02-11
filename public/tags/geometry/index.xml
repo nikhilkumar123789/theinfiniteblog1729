@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geometry on Nikhil&#39;s Math Blog</title>
+    <link>http://localhost:1313/tags/geometry/</link>
+    <description>Recent content in Geometry on Nikhil&#39;s Math Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/geometry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Non-Euclidean Geometry Fundamentals</title>
+      <link>http://localhost:1313/about/about/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/about/</guid>
+      <description>&lt;h2 id=&#34;vector-spaces&#34;&gt;Vector Spaces&lt;/h2&gt;&#xA;&lt;p&gt;A vector space $V$ over a field $F$ satisfies these axioms:&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;\begin{aligned}&#xA;&amp;amp;\forall \mathbf{u},\mathbf{v} \in V,\ \mathbf{u} + \mathbf{v} \in V \&#xA;&amp;amp;\forall \alpha \in F,\ \forall \mathbf{v} \in V,\ \alpha \mathbf{v} \in V&#xA;\end{aligned}&#xA;$$&lt;/p&gt;&#xA;&lt;h2 id=&#34;eigenvalue-problem&#34;&gt;Eigenvalue Problem&lt;/h2&gt;&#xA;&lt;p&gt;For a square matrix $A$, find:&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;A\mathbf{v} = \lambda\mathbf{v}&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;Where:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;$\lambda$ is the eigenvalue&lt;/li&gt;&#xA;&lt;li&gt;$\mathbf{v} \neq \mathbf{0}$ is the eigenvector&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;matrix-exponential&#34;&gt;Matrix Exponential&lt;/h2&gt;&#xA;&lt;p&gt;The exponential of a matrix:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Non-Euclidean Geometry Fundamentals</title>
+      <link>http://localhost:1313/posts/post2/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/post2/</guid>
+      <description>&lt;h2 id=&#34;vector-spaces&#34;&gt;Vector Spaces&lt;/h2&gt;&#xA;&lt;p&gt;A vector space $V$ over a field $F$ satisfies these axioms:&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;\begin{aligned}&#xA;&amp;amp;\forall \mathbf{u},\mathbf{v} \in V,\ \mathbf{u} + \mathbf{v} \in V \&#xA;&amp;amp;\forall \alpha \in F,\ \forall \mathbf{v} \in V,\ \alpha \mathbf{v} \in V&#xA;\end{aligned}&#xA;$$&lt;/p&gt;&#xA;&lt;h2 id=&#34;eigenvalue-problem&#34;&gt;Eigenvalue Problem&lt;/h2&gt;&#xA;&lt;p&gt;For a square matrix $A$, find:&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;A\mathbf{v} = \lambda\mathbf{v}&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;Where:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;$\lambda$ is the eigenvalue&lt;/li&gt;&#xA;&lt;li&gt;$\mathbf{v} \neq \mathbf{0}$ is the eigenvector&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;matrix-exponential&#34;&gt;Matrix Exponential&lt;/h2&gt;&#xA;&lt;p&gt;The exponential of a matrix:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

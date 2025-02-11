@@ -1,0 +1,12 @@
+baseURL = "https://github.com/nikhilkumar123789/theinfiniteblog1729"
+languageCode = "en-us"
+title = "The Infinite Line"
+theme = "hyde"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # Essential for MathJax
+
+[params]
+  description = "A blog about mathematics and its applications"

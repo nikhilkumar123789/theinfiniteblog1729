@@ -1,0 +1,36 @@
+/* MathJax Styles */
+.MathJax {
+  font-size: 1.1em !important;
+  line-height: 1.4 !important;
+}
+
+.mjx-chtml {
+  padding: 0.2em 0 !important;
+}
+
+.MJXc-display {
+  margin: 1.5em 0 !important;
+  padding: 1em !important;
+  background: #f8f9fa;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.MJXc-display::-webkit-scrollbar {
+  height: 5px;
+}
+
+.MJXc-display::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .MJXc-display {
+    background: #2d2d2d;
+  }
+  
+  .mjx-chtml {
+    color: #e1e1e1 !important;
+  }
+}

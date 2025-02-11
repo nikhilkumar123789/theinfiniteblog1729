@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-us" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proof that r! divides product of r consecutive integers | The Infinite Line</title>
+
+
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            tags: 'ams',
+            packages: { '[+]': ['physics', 'color'] }
+        },
+        loader: { load: ['[tex]/physics', '[tex]/color'] },
+        chtml: {
+            displayAlign: 'left',
+            displayIndent: '2em'
+        }
+    };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+
+
+<link rel="stylesheet" href="/css/main.min.3e3be886d19886587f803d75ce1452d58b9ac1e7db1cfbf60e0ef85162a8a5a7.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="bg-surface text-on-surface font-sans antialiased">
+    <header class="bg-primary text-on-primary shadow-md fixed w-full top-0 z-50">
+  <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="http://theinfiniteline1729.com/" class="flex items-center gap-2" id="site-title-class">
+      <img src="/images/logo.svg" alt="Logo" class="h-8 w-8">
+      <span class="text-xl font-bold" id="site-title">The Infinite Line</span>
+    </a>
+    
+    <div class="flex gap-6">
+      <a href="/posts" class="hover:text-accent transition-colors">Posts</a>
+      <a href="/about" class="hover:text-accent transition-colors">About</a>
+    </div>
+  </nav>
+</header>
+
+    <main class="container mx-auto px-4 py-8">
+        
+<article class="post">
+    <h1>Proof that r! divides product of r consecutive integers</h1>
+    <time>February 11, 2025</time>
+
+    <div class="post-content">
+        <h1 id="problem-statement">Problem Statement</h1>
+<p>Prove that the product of any $r$ consecutive integers is divisible by $r!$, i.e.,
+$$P(n,r):r!\mid n(n+1)\dots (n+r-1)$$
+is true $\forall n,r\in\mathbb{N}$</p>
+<h1 id="preliminary-analysis">Preliminary Analysis</h1>
+<p>Denote
+$$p(n,r):=n(n+1)(n+2)\dots(n+r-1)$$
+Then, we have
+$$
+\begin{array}{rrl}
+&amp;p(n,r+1)&amp;=n(n+1)(n+2)\dots(n+r-1)(n+r)\newline
+\implies&amp;p(n,r+1)&amp;=n(n+1)(n+2)\dots(n+r-1)[(n-1)+(r+1)]\newline
+&amp;&amp;=(n-1)n(n+1)(n+2)\dots(n+r-1)+(r+1)n(n+1)(n+2)\dots(n+r-1)\newline
+&amp;&amp;=p(n-1,r+1)+(r+1)p(n,r)
+\end{array}
+$$</p>
+<p>Hence, we have
+$$p(n,r+1)=p(n-1,r+1)+(r+1)p(n,r)$$</p>
+<p>Now, we have writing for $n$ from $n$ to $2$ and adding the following equations
+$$
+\begin{align*}
+p(n,r+1)&amp;=\bcancel{p(n-1,r+1)}+(r+1)p(n,r)\newline
+\bcancel{p(n-1,r+1)}&amp;=\bcancel{p(n-2,r+1)}+(r+1)p(n-1,r)\newline
+\bcancel{p(n-2,r+1)}&amp;=\bcancel{p(n-3,r+1)}+(r+1)p(n-2,r)\newline
+\vdots&amp;=\vdots+\vdots\newline
+\bcancel{p(3,r+1)}&amp;=\bcancel{p(2,r+1)}+(r+1)p(3,r)\newline
+\bcancel{p(2,r+1)}&amp;=p(1,r+1)+(r+1)p(2,r)\newline
+\end{align*}
+$$
+we get
+$$p(n,r+1)=p(1,r+1)+(r+1)[p(n,r)+p(n-1,r)+p(n-2,r)+\dots+p(3,r)+p(2,r)]$$
+Since $p(1,r+1)=1\cdot2\cdot3\cdot\dots\cdot r\cdot(r+1)=(r+1)!$, we have
+$$p(n,r+1)=(r+1)!+(r+1)[p(n,r)+p(n-1,r)+p(n-2,r)+\dots+p(3,r)+p(2,r)]$$</p>
+<p>Now, for the second part, we have
+$$
+\begin{array}{rrl}
+&amp;p(n+1,r)&amp;=(n+1)(n+2)(n+3)\dots(n+r-1)(n+r)\newline
+\implies&amp;p(n+1,r)&amp;=n(n+1)(n+2)\dots(n+r-1)+r(n+1)(n+2)(n+3)\dots(n+r-1)\newline
+&amp;&amp;=p(n,r)+rp(n+1,r-1)
+\end{array}
+$$</p>
+<p>Hence, we have
+$$p(n+1,r)=p(n,r)+rp(n+1,r-1)$$
+Now, we have writing for $r$ from $r$ to $2$, we have following equations:
+$$
+\begin{array}{rlr}
+p(n+1,r)&amp;=p(n,r)+rp(n+1,r-1)&amp;(1)\newline
+p(n+1,r-1)&amp;=p(n,r-1)+(r-1)p(n+1,r-2)&amp;(2)\newline
+p(n+1,r-2)&amp;=p(n,r-2)+(r-2)p(n+1,r-3)&amp;(3)\newline
+\vdots&amp;=\vdots+\vdots&amp;\newline
+p(n+1,3)&amp;=p(n,3)+3p(n+1,2)&amp;(r-2)\newline
+p(n+1,2)&amp;=p(n,2)+2p(n+1,1)&amp;(r-1)\newline
+\end{array}
+$$
+(1)+$r$(2)+$r(r-1)$(3)+\dots+$[r(r-1)\dots4]$(r-2)+$[r(r-1)\dots3]$(r-1)$\implies$
+$$
+\begin{align*}
+p(n+1,r)&amp;=p(n,r)+\bcancel{rp(n+1,r-1)}\newline
+\bcancel{rp(n+1,r-1)}&amp;=rp(n,r-1)+\bcancel{r(r-1)p(n+1,r-2)}\newline
+\bcancel{r(r-1)p(n+1,r-2)}&amp;=r(r-1)p(n,r-2)+\bcancel{r(r-1)(r-2)p(n+1,r-3)}\newline
+\vdots&amp;=\vdots+\vdots\newline
+\bcancel{[r(r-1)\dots4]p(n+1,3)}&amp;=[r(r-1)\dots4]p(n,3)+\bcancel{[r(r-1)\dots4]3p(n+1,2)}\newline
+\bcancel{[r(r-1)\dots3]p(n+1,2)}&amp;=[r(r-1)\dots3]p(n,2)+[r(r-1)\dots3]2p(n+1,1)
+\end{align*}
+$$
+$\implies$
+$$
+\begin{array}{rl}
+p(n+1,r)&amp;=p(n,r)+rp(n,r-1)+r(r-1)p(n,r-2)+\dots+\newline
+&amp;[r(r-1)\dots4]p(n,3)[r(r-1)\dots3]p(n,2)+[r(r-1)\dots3]2p(n+1,1)
+\end{array}
+$$
+Since $[r(r-1)\dots3]\cdot2=r!$ and $p(n+1,1)=(n+1)$, we have
+$$p(n+1,r)=p(n,r)+\left\{\sum_{i=2}^{r-1}\left[\prod_{j=0}^{(r-1)-i}(r-j)\right]p(n,i)\right\}+(n+1)r!$$
+Hence, we have two results</p>
+<ol>
+<li>Result 1:$$p(n,r+1)=(r+1)!+(r+1)[p(n,r)+p(n-1,r)+p(n-2,r)+\dots+p(3,r)+p(2,r)]$$</li>
+<li>Result 2:$$p(n+1,r)=p(n,r)+\left\{{\sum_{i=2}^{r-1}\left[\prod_{j=0}^{(r-1)-i}(r-j)\right]p(n,i)}\right\}+(n+1)r!$$</li>
+</ol>
+<h3 id="result-1">Result 1</h3>
+<p>Suppose $r!\mid p(n,r)$ for $n\leq k$. Then, from result 1, since $p(k,r+1)=(r+1)!+(r+1)\cdot r!\cdot x=(r+1)!(1+x)$ for some $x\in\mathbb{N}$, we have $(r+1)!\mid p(k,r+1)$.
+Hence, $$r!\mid p(n,r)\text{ for }n\leq k \implies (r+1)!\mid p(k,r+1)$$</p>
+<h3 id="result-2">Result 2</h3>
+<p>Suppose $r!\mid p(n,r)$ for $r\leq u$. Then, from result 1, since $p(n+1,u)=p(n,u)+\displaystyle{\left\{\sum_{i=2}^{u-1}\left[\prod_{j=0}^{(u-1)-i}(u-j)\right]p(n,i)\right\}}+(n+1)u!$ and $p(n,i)=i!x_i$ for some $x_i\in\mathbb{N}$ we have, $u(u-1)\dots(i+1)p(n,i)=u!x_i$. Also, since $p(n,u)=u!x$ for some $x\in\mathbb{N}$, we have
+$$
+p(n+1,u)=u!x+\displaystyle{\left\{\sum_{i=2}^{u-1}u!x_i\right\}}+(n+1)u!s
+$$
+Hence, $u!\mid p(n+1,u)$.
+Thus,
+$$r!\mid p(n,r)\text{ for }r\leq u \implies u!\mid p(n+1,u)$$</p>
+<h1 id="results">Results</h1>
+<p>Thus, we have two main results</p>
+<ol>
+<li>Result 1$$r!\mid p(n,r)\text{ for }n\leq k \implies (r+1)!\mid p(k,r+1)$$</li>
+<li>Result 2$$r!\mid p(n,r)\text{ for }r\leq u \implies u!\mid p(n+1,u)$$</li>
+</ol>
+<h1 id="principle-of-mathematical-induction">Principle of mathematical induction</h1>
+<h2 id="induction-on-r">Induction on r</h2>
+<h4 id="base-case">Base case</h4>
+<p>This is true for $r=1$ since $r!=1!=1\mid n$ for any $n\in\mathbb{N}$</p>
+<h4 id="inductive-step">Inductive Step</h4>
+<p>Let us assume that $r!\mid p(n,r)$ for $r\leq u$. Thus, we have to prove $(u+1)!\mid p(n,u+1)$.\
+Now, we do induction on $n$ to prove $(u+1)!\mid p(n,u+1)$. This is true for $n=1$ since $(u+1)!\mid p(1,u+1)=(u+1)!$. Suppose this is true for all $n\leq k$. Then, we have $(u+1)!\mid p(k,u+1)$ from result 1. Since, we assumed $r!\mid p(n,r)$ for $r\leq u$ and $(u+1)!\mid p(k,u+1)$, we have $r!\mid p(n,r)$ for $r\leq (u+1)$ and hence, $(u+1)!\mid p(k+1,u+1)$. Hence, by induction on $n$, we have $(u+1)!\mid p(n,u+1)$ for all $n\in\mathbb{N}$. This also completes our inductive step on $r$. Hence, $r!\mid p(n,r)$ for all $(n,r)\in\mathbb{N}\times\mathbb{N}$.</p>
+<p><strong>Note:</strong> Please see if the induction proof makes sense and if you can find a less cumbersome way of doing this proof.</p>
+<h2 id="induction-on-n">Induction on n</h2>
+<h4 id="base-case-1">Base case</h4>
+<p>This is true for $n=1$ since $r!\mid 1\cdot2\cdot3\cdot\dots\cdot(1+r-1)=r!$ for any $r\in\mathbb{N}$.</p>
+<h4 id="inductive-step-1">Inductive Step</h4>
+<p>Let us assume that $r!\mid p(n,r)$ for $n\leq k$. Thus, we have to prove $r!\mid p(k+1,r)$.\
+Now, we do induction on $r$ to prove $r!\mid p(k+1,r)\forall r\in\mathbb{N}$. This is true for $r=1$ since $r!=1!=1\mid p(k+1,1)=(k+1)$. Now, let&rsquo;s assume that this is true for all $r\leq u$. Then, we have $u!\mid p(k+1,u)$ from result 2. Now, since $r\mid p(n,r)\forall n\leq (k+1)$ [as we assumed $r! \mid p(n,r)\forall n\leq k$ and hence $u!\mid p(n,u)\forall n\leq u$]. Thus, from result 1, $(u+1)!\mid p(k+1,u+1)$.\
+Hence, $r!\mid p(k+1,r)\forall r\in\mathbb{N}$. This also completes our induction step on $n$. Thus, $r!\mid p(n,r)\forall(n,r)\in\mathbb{N}\times\mathbb{N}$.</p>
+
+    </div>
+
+    
+    <div class="post-navigation">
+        
+        <a class="prev" href="/posts/2.-gcd_proof_powers/">← A GCD Proof</a>
+        
+
+        
+    </div>
+</article>
+
+    </main>
+
+    <footer class="bg-surface-container mt-16 py-8 border-t border-outline-variant">
+  <div class="container mx-auto px-4 text-center">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="footer-section">
+        <h4 class="text-lg font-semibold mb-4" style="margin-bottom: 0">About</h4>
+        <p class="text-sm text-muted">The Infinite Line is dedicated to exploring the beauty and intricacies of mathematics, offering articles, tutorials, and problem-solving
+        strategies for enthusiasts and students alike.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4 class="text-lg font-semibold mb-4" style="margin-bottom: 0">Categories</h4>
+        <ul class="text-sm space-y-2">
+          
+          <li><a href="/categories/number-theory/" class="text-muted hover:text-accent transition-colors">Number Theory</a></li>
+          
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4 class="text-lg font-semibold mb-4" style="margin-bottom: 0">Connect</h4>
+        <div class="flex justify-center space-x-4">
+          <a href="https://www.linkedin.com/in/nikhilkumar-iitkgp/" class="text-muted hover:text-accent transition-colors">LinkedIn</a>
+          <a href="https://github.com/nikhilkumar123789" class="text-muted hover:text-accent transition-colors">GitHub</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mt-8 pt-8 border-t border-outline-variant">
+      <p class="text-sm text-muted">&copy; 2025 The Infinite Line. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

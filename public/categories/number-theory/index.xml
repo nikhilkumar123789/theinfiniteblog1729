@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Number Theory on The Infinite Line</title>
+    <link>http://theinfiniteline1729.com/categories/number-theory/</link>
+    <description>Recent content in Number Theory on The Infinite Line</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://theinfiniteline1729.com/categories/number-theory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Proof that r! divides product of r consecutive integers</title>
+      <link>http://theinfiniteline1729.com/posts/1.-proof_ncr_integer/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://theinfiniteline1729.com/posts/1.-proof_ncr_integer/</guid>
+      <description>&lt;h1 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h1&gt;&#xA;&lt;p&gt;Prove that the product of any $r$ consecutive integers is divisible by $r!$, i.e.,&#xA;$$P(n,r):r!\mid n(n+1)\dots (n+r-1)$$&#xA;is true $\forall n,r\in\mathbb{N}$&lt;/p&gt;&#xA;&lt;h1 id=&#34;preliminary-analysis&#34;&gt;Preliminary Analysis&lt;/h1&gt;&#xA;&lt;p&gt;Denote&#xA;$$p(n,r):=n(n+1)(n+2)\dots(n+r-1)$$&#xA;Then, we have&#xA;$$&#xA;\begin{array}{rrl}&#xA;&amp;amp;p(n,r+1)&amp;amp;=n(n+1)(n+2)\dots(n+r-1)(n+r)\newline&#xA;\implies&amp;amp;p(n,r+1)&amp;amp;=n(n+1)(n+2)\dots(n+r-1)[(n-1)+(r+1)]\newline&#xA;&amp;amp;&amp;amp;=(n-1)n(n+1)(n+2)\dots(n+r-1)+(r+1)n(n+1)(n+2)\dots(n+r-1)\newline&#xA;&amp;amp;&amp;amp;=p(n-1,r+1)+(r+1)p(n,r)&#xA;\end{array}&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;Hence, we have&#xA;$$p(n,r+1)=p(n-1,r+1)+(r+1)p(n,r)$$&lt;/p&gt;&#xA;&lt;p&gt;Now, we have writing for $n$ from $n$ to $2$ and adding the following equations&#xA;$$&#xA;\begin{align*}&#xA;p(n,r+1)&amp;amp;=\bcancel{p(n-1,r+1)}+(r+1)p(n,r)\newline&#xA;\bcancel{p(n-1,r+1)}&amp;amp;=\bcancel{p(n-2,r+1)}+(r+1)p(n-1,r)\newline&#xA;\bcancel{p(n-2,r+1)}&amp;amp;=\bcancel{p(n-3,r+1)}+(r+1)p(n-2,r)\newline&#xA;\vdots&amp;amp;=\vdots+\vdots\newline&#xA;\bcancel{p(3,r+1)}&amp;amp;=\bcancel{p(2,r+1)}+(r+1)p(3,r)\newline&#xA;\bcancel{p(2,r+1)}&amp;amp;=p(1,r+1)+(r+1)p(2,r)\newline&#xA;\end{align*}&#xA;$$&#xA;we get&#xA;$$p(n,r+1)=p(1,r+1)+(r+1)[p(n,r)+p(n-1,r)+p(n-2,r)+\dots+p(3,r)+p(2,r)]$$&#xA;Since $p(1,r+1)=1\cdot2\cdot3\cdot\dots\cdot r\cdot(r+1)=(r+1)!$, we have&#xA;$$p(n,r+1)=(r+1)!+(r+1)[p(n,r)+p(n-1,r)+p(n-2,r)+\dots+p(3,r)+p(2,r)]$$&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
