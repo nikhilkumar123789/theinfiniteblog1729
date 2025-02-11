@@ -63,7 +63,4 @@ $$
 for $k\in\mathbb{Z}$&lt;/p>
 &lt;p>Now, since $d\mid\left(\displaystyle\frac{a^n+b^n}{a+b}\right)$ and $d\mid(a+b)$, we have
 $$d\mid na^{n-1}$$
-Also, since let $(a+b,a)=h$. Then, since $h\mid(a+b)$ and $h\mid a$, we have $h\mid(a+b)-a$ or $h\mid b$ or $h\mid(a,b)$. Since, $(a,b)=1$ and $h\mid (a,b)=1$ ($h&amp;gt;0$), we have $h=1$. Hence, $(a+b,a)=1$.\
-Thus, $\exists x,y\in\mathbb{Z}$ such that
-$$(a+b)x+ay=1$$
-from Bezout&amp;rsquo;s identity.&lt;/p></description></item></channel></rss>
+Also, since let $(a+b,a)=h$. Then, since $h\mid(a+b)$ and $h\mid a$, we have $h\mid(a+b)-a$ or $h\mid b$ or $h\mid(a,b)$. Since, $(a,b)=1$ and $h\mid (a,b)=1$ ($h&amp;gt;0$), we have $h=1$. Hence, $(a+b,a)=1$.&lt;/p></description></item></channel></rss>
