@@ -2,6 +2,7 @@ baseURL = "https://nikhilkumar123789.github.io/theinfiniteblog1729/"
 languageCode = "en-us"
 title = "The Infinite Line"
 theme = "hyde"
+enableRobotsTXT = true
 
 [markup]
   [markup.goldmark]
@@ -9,4 +10,9 @@ theme = "hyde"
       unsafe = true # Essential for MathJax
 
 [params]
-  description = "A blog about mathematics and its applications"
+  description = "A professional mathematics blog featuring proofs, number theory, and elegant ideas from elementary and advanced mathematics."
+  author = "Nikhil Kumar"
+  keywords = ["mathematics", "number theory", "proofs", "problem solving", "research notes"]
+  github = "https://github.com/nikhilkumar123789"
+  linkedin = "https://www.linkedin.com/in/nikhilkumar-iitkgp/"
+  themeColor = "#0f172a"

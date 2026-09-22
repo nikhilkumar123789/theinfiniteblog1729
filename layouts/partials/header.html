@@ -1,13 +1,17 @@
-<header class="bg-primary text-on-primary shadow-md fixed w-full top-0 z-50">
-  <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
-    <a href="{{ .Site.BaseURL }}" class="flex items-center gap-2" id="site-title-class">
-      <img src="{{ .Site.BaseURL }}/images/logo.svg" alt="Logo" class="h-8 w-8">
-      <span class="text-xl font-bold" id="site-title">{{.Site.Title}}</span>
+<header class="site-header">
+  <div class="container site-header-inner">
+    <a href="{{ .Site.BaseURL }}" class="brand" aria-label="Home">
+      <img src="{{ .Site.BaseURL }}/images/logo.svg" alt="The Infinite Line logo" class="brand-mark">
+      <div>
+        <span class="brand-title">{{ .Site.Title }}</span>
+        <span class="brand-tagline">Problem solving & ideas in mathematics</span>
+      </div>
     </a>
-    
-    <div class="flex gap-6">
-      <a href="{{ .Site.BaseURL }}/posts" class="hover:text-accent transition-colors">Posts</a>
-      <a href="{{ .Site.BaseURL }}/about" class="hover:text-accent transition-colors">About</a>
-    </div>
-  </nav>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="{{ .Site.BaseURL }}">Home</a>
+      <a href="{{ .Site.BaseURL }}/posts">Posts</a>
+      <a href="{{ .Site.BaseURL }}/about">About</a>
+    </nav>
+  </div>
 </header>
